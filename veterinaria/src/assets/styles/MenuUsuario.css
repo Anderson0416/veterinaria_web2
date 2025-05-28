@@ -1,0 +1,7 @@
+/* Estilo para los items del dropdown cuando se hace click */
+.custom-dropdown .dropdown-item:active {
+    background-color: #33b72b !important;
+  }
+  .custom-dropdown .dropdown-item:hover {
+    background-color: rgba(51, 183, 43, 0.1);  /* Verde más claro para el hover */
+  }

@@ -1,0 +1,28 @@
+.Container {
+  display: grid;
+  grid-template-columns: repeat(3, 288px);
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  
+}
+
+.Title{
+  text-align: center;
+  padding-top: 15px;
+  align-items: center;
+  justify-items: center;
+}
+.Card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  border-radius: 32px;
+  overflow: hidden;
+  border: 2px solid transparent;
+
+}
+
+.Card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 2px solid #4a6bff; /* Color verde de Bootstrap */
+}

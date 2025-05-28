@@ -1,0 +1,35 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url('../images/perro.png'); /* Cambia la ruta a la imagen deseada */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; /* Alternativas: cover, auto, o tamaño específico */
+  background-attachment: fixed; /* Hace que la imagen permanezca fija durante el desplazamiento */
+  
+  /* Para asegurar que el contenido sea legible sobre la imagen */
+  position: relative;
+}
+
+/* Si deseas que la imagen tenga una opacidad reducida para no interferir con el contenido */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #ffffffa8; /* Fondo blanco semi-transparente */
+}
+
+/* Para asegurar que todos los contenedores tengan un fondo suficientemente opaco */
+ .container {
+  background-color: rgba(255, 255, 255, 0.824) !important; 
+}

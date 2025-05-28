@@ -1,0 +1,509 @@
+/* Estilos para el modal de anamnesis */
+.modal-90w {
+  max-width: 90%;
+  width: 900px;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.register-container {
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.header h2 {
+  font-size: 1.8rem;
+  color: #2a3f54;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Estilos para el header del modal personalizado */
+.modal-header-custom {
+  background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+  color: white;
+  border-bottom: none;
+  padding: 1.5rem 2rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.modal-logo {
+  height: 40px;
+  width: auto;
+}
+
+.modal-header-custom .modal-title {
+  color: white;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.modal-header-custom .btn-close {
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+}
+
+.modal-header-custom .btn-close:hover {
+  opacity: 1;
+}
+
+/* Barra de progreso */
+.progress-container {
+  margin-bottom: 2rem;
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #757575;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.step-label {
+  font-size: 0.8rem;
+  color: #757575;
+  transition: all 0.3s ease;
+  text-align: center;
+  min-width: 60px;
+}
+
+.progress-step.active .step-number {
+  background-color: #4e73df;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(78, 115, 223, 0.3);
+}
+
+.progress-step.active .step-label {
+  color: #4e73df;
+  font-weight: 600;
+}
+
+.progress-line {
+  flex: 1;
+  height: 3px;
+  background-color: #e0e0e0;
+  margin: 0 8px;
+  position: relative;
+  top: -20px;
+  z-index: 0;
+  border-radius: 2px;
+}
+
+/* Estilos para los pasos */
+.step-container {
+  animation: fadeIn 0.5s ease;
+  min-height: 400px;
+}
+
+.step-title {
+  font-size: 1.5rem;
+  color: #2a3f54;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  border-bottom: 2px solid #e3e6f0;
+  padding-bottom: 0.5rem;
+}
+
+.form-content {
+  padding: 1rem 0;
+}
+
+/* Estilos para grupos de formulario */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #505050;
+  font-size: 0.95rem;
+}
+
+.input-wrapper,
+.select-wrapper {
+  position: relative;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  border-color: #4e73df;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+.form-control:disabled {
+  background-color: #f8f9fa;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.form-control.is-invalid {
+  border-color: #e74a3b;
+  box-shadow: 0 0 0 0.2rem rgba(231, 74, 59, 0.25);
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.invalid-feedback {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #e74a3b;
+  font-weight: 500;
+}
+
+/* Botones de navegación */
+.form-footer,
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e3e6f0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.5rem;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  gap: 0.5rem;
+  text-decoration: none;
+  user-select: none;
+}
+
+.btn-prev {
+  background-color: #f8f9fc;
+  border-color: #d1d3e2;
+  color: #757575;
+}
+
+.btn-prev:hover {
+  background-color: #eaecf4;
+  border-color: #c3c6d4;
+  color: #5a5c69;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-next {
+  background-color: #4e73df;
+  border-color: #4e73df;
+  color: #fff;
+}
+
+.btn-next:hover {
+  background-color: #2e59d9;
+  border-color: #2653d4;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(78, 115, 223, 0.3);
+}
+
+.btn-submit {
+  background-color: #1cc88a;
+  border-color: #1cc88a;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-submit:hover {
+  background-color: #17a673;
+  border-color: #169b6b;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(28, 200, 138, 0.3);
+}
+
+.btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Estilos para campos de solo lectura */
+.form-control[readonly] {
+  background-color: #f8f9fa;
+  border-color: #e9ecef;
+  color: #6c757d;
+}
+
+/* Mejoras visuales adicionales */
+.progress-step.completed .step-number {
+  background-color: #1cc88a;
+  color: #fff;
+}
+
+.progress-step.completed .step-label {
+  color: #1cc88a;
+}
+
+/* Estilos para el contenido del formulario */
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-col {
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modal-90w {
+    max-width: 95%;
+    width: 100%;
+  }
+  
+  .register-container {
+    padding: 1rem;
+  }
+  
+  .progress-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .progress-step {
+    margin: 0.25rem;
+  }
+  
+  .step-label {
+    font-size: 0.7rem;
+  }
+  
+  .progress-line {
+    display: none;
+  }
+  
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .button-group,
+  .form-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .step-title {
+    font-size: 1.25rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .modal-logo {
+    height: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .register-container {
+    padding: 0.75rem;
+  }
+  
+  .step-container {
+    min-height: 350px;
+  }
+  
+  .progress-bar {
+    padding: 0;
+  }
+  
+  .step-number {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+  
+  .form-control {
+    padding: 0.65rem 0.85rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Estilos para mejorar la accesibilidad */
+.form-control:focus,
+.btn:focus {
+  outline: 2px solid #4e73df;
+  outline-offset: 2px;
+}
+
+.btn:focus-visible {
+  box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.5);
+}
+
+/* Estilos para estados de hover en elementos interactivos */
+.progress-step:hover .step-number {
+  transform: scale(1.05);
+}
+
+.progress-step.active:hover .step-number {
+  transform: scale(1.1);
+}
+
+/* Transiciones suaves */
+.form-control,
+.btn,
+.progress-step * {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Estilos para placeholder */
+.form-control::placeholder {
+  color: #6c757d;
+  opacity: 0.7;
+}
+
+.form-control:focus::placeholder {
+  opacity: 0.5;
+}
+
+/* Mejoras para el contraste y legibilidad */
+.invalid-feedback {
+  background-color: #f8d7da;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+/* Estilos para indicar campos requeridos */
+.form-group label::after {
+  content: ' *';
+  color: #e74a3b;
+  font-weight: bold;
+}
+
+.form-group label[for="peso"]::after,
+.form-group label[for="estadoReproductivo"]::after,
+.form-group label[for="tipoVivienda"]::after,
+.form-group label[for="actividadFisica"]::after,
+.form-group label[for="vacunasPrevias"]::after,
+.form-group label[for="vacunasPreviasDesparacitacion"]::after,
+.form-group label[for="motivoConsulta"]::after,
+.form-group label[for="sintomasMascota"]::after,
+.form-group label[for="observaciones"]::after,
+.form-group label[for="dieta"]::after {
+  content: ' *';
+}

@@ -1,0 +1,52 @@
+/* LoginForm.css */
+.login-page {
+  height: 100vh; /* Asegúrate de que ocupa toda la altura de la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-page .fullscreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-page .login-container {
+  background: #4a6bff;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-top: 40px;
+  text-align:center;
+}
+
+.login-page .nav-pills .nav-link.active {
+  background-color: #33b72b; /* Color verde */
+  color: #fff; /* Color blanco para el texto cuando está activo */
+}
+
+.login-page .nav-pills .nav-link {
+  border-radius: 5px;
+  color: #33b72b; /* Color verde para el texto cuando no está activo */
+}
+
+ .btn-primary, .btn-primary.nav-link.active {
+  background-color: #33b72b; /* Color verde */
+  border-color: #33b72b; /* Color verde */
+}
+.btn-primary:hover {
+  background-color: #1a7b15; /* Color verde */
+  border-color: #0c4b09; /* Color verde */
+}
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:active:focus {
+  background-color: #1a7b15 !important; /* Color verde más oscuro para click */
+  border-color: #0c4b09 !important;
+  box-shadow: 0 0 0 0.25rem rgba(51, 183, 43, 0.25) !important; /* Sombra verde al focus */
+}
